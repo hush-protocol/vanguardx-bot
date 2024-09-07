@@ -1,0 +1,36 @@
+{
+  "name": "vanguard-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A bot which implements the dictatorship policies of the revolutionary organization of hush-protocol",
+  "author": "dipanshuhappy",
+  "license": "ISC",
+  "homepage": "https://github.com//",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "probot run ./lib/index.js",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "mongoose": "^8.6.1",
+    "probot": "^13.0.1",
+    "probot-commands": "^1.1.0",
+    "puregram": "^2.26.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nock": "^14.0.0-beta.5",
+    "smee-client": "^2.0.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "type": "module"
+}
