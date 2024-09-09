@@ -52,11 +52,15 @@ has been created at link ${context.payload.issue.html_url}
         issue_number: context.payload.issue.number,
         per_page: 100,
       });
+
+      console.log(timeline.data, "timeline");
     
     timeline.data.forEach(async (event) => {
       // console.log(event, "event");
       const pr = (event as any).source;
+      console.log(pr,'prevennnt')
       if (pr) {
+        console.log(pr, "pr");
         console.log(pr, "pr");
         const points = extractPointsFromTitle(context.payload.issue.title);
         const userPoints = await user.findOne({githubUsername: pr.issue.user.login});
